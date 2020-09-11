@@ -46,6 +46,6 @@
     "license": "build/eula.txt"
   },
   "portable": {
-    "artifactName": "AngularElectron_v${version}_Portable_Win.${ext}",
+    "artifactName": "AngularElectron_v${version}_Portable_Win.${ext}"
   }
 }
