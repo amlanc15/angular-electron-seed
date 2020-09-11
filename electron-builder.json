@@ -47,6 +47,5 @@
   },
   "portable": {
     "artifactName": "AngularElectron_v${version}_Portable_Win.${ext}",
-    "splashImage": "C:\\Users\\chakra9\\Public Repo\\Angular electron seed\\SplashScreen.bmp"
   }
 }
