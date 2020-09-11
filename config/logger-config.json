@@ -1,0 +1,7 @@
+{
+    "dirName": "logs",
+    "fileName": "angular-electron-",
+    "datePattern": "yyyy-MM-dd",
+    "errorFileName": "angular-electron-error-",
+    "logLevel": "info"
+}

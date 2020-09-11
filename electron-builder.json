@@ -1,0 +1,52 @@
+{
+  "appId": "angular-electron",
+  "directories": {
+    "buildResources": "./dist/*",
+    "output": "installers"
+  },
+  "files": [
+    "**/*",
+    "dist/*",
+    "build/*.png*",
+    "build/*.ico",
+    "dist/assets/images",
+    "dist/assets/documents"
+  ],
+  "extraFiles": [
+    {
+      "from": "config/logger-config.json",
+      "to": "config/logger-config.json"
+    }
+  ],
+  "win": {
+    "icon": "build/favicon.ico",
+    "publisherName": "Amlan Chakrabarty<itsac13@gmail.com>",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      },
+      {
+        "target": "portable",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true,
+    "artifactName": "AngularElectron_v${version}_Windows.exe",
+    "license": "build/eula.txt"
+  },
+  "portable": {
+    "artifactName": "AngularElectron_v${version}_Portable_Win.${ext}",
+    "splashImage": "C:\\Users\\chakra9\\Public Repo\\Angular electron seed\\SplashScreen.bmp"
+  }
+}
